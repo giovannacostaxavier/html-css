@@ -8,41 +8,43 @@
 <body>
     <h1>Teste de Formulários</h1>
    <form action="" autocomplete="on" method="post">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required autocomplete="name">
+        </p>
+        <p>
+            <label for="isenha">Senha</label>
+            <input type="password" name="senha" id="isenha" required autocomplete="new-password">
+        </p>
+        <p>
+            <label for="inumero">Número</label>
+            <input type="number" name="numero" id="inumero" step="0.1" required>
+        </p>
+        <p>
+            <label for="imes">Mês</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="idata">Data</label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        <p>
+            <label for="itempo">Tempo</label>
+            <input type="time" name="tempo" id="itempo" required>
+        </p>
+        <p>
+            <label for="iemail">Email</label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p>
+            <label for="itel">Telefone</label>
+            <input type="tel" name="tel" id="itel" required>
+        </p>
+    </fieldset>
     <p>
-        <label for="inome">Nome</label>
-        <input type="text" name="nome" id="inome" required autocomplete="name">
-    </p>
-    <p>
-        <label for="isenha">Senha</label>
-        <input type="password" name="senha" id="isenha" required autocomplete="new-password">
-    </p>
-    <p>
-        <label for="inumero">Número</label>
-        <input type="number" name="numero" id="inumero" step="0.1" required>
-    </p>
-    <p>
-        <label for="imes">Mês</label>
-        <input type="month" name="mes" id="imes" required>
-    </p>
-    <p>
-        <label for="idata">Data</label>
-        <input type="date" name="data" id="idata" required>
-    </p>
-    <p>
-        <label for="itempo">Tempo</label>
-        <input type="time" name="tempo" id="itempo" required>
-    </p>
-    <p>
-        <label for="iemail">Email</label>
-        <input type="email" name="email" id="iemail" required>
-    </p>
-    <p>
-        <label for="itel">Telefone</label>
-        <input type="tel" name="tel" id="itel" required>
-    </p>
-    <p>
-        <input type="checkbox" name="casa" id="icasa">
-        <label for="icasa">Casa</label>
+        Qual seu cômodo preferido:
     </p>
     <p>
         <input type="checkbox" name="Sala" id="isala">
@@ -73,13 +75,13 @@
         <input type="color" name="cor" id="icor">
     </p>
     <p>
-        <label for="isas">Oquanto voce gosta</label>
+        <label for="isas">O quanto você aprova esta pesquisa:</label>
         <input type="range" name="sas" id="isas">
     </p>
     <p>
         <label for="ifil">Carregue aqui</label>
         <input type="file" name="fil" id="ifil">
-    </p>
+    </p> Selecione sua cor favorita <br>
     <select name="seletor" id="iseletor">
         <option value="" selected>--Selecione--</option>
         <option value="ver">Vermelho</option>
