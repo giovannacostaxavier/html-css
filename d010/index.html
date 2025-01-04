@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulários</title>
+</head>
+<body>
+    <h1>Teste de Formulários</h1>
+   <form action="" autocomplete="on" method="post">
+    <p>
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome" required autocomplete="name">
+    </p>
+    <p>
+        <label for="isenha">Senha</label>
+        <input type="password" name="senha" id="isenha" required autocomplete="new-password">
+    </p>
+    <p>
+        <label for="inumero">Número</label>
+        <input type="number" name="numero" id="inumero" step="0.1" required>
+    </p>
+    <p>
+        <label for="imes">Mês</label>
+        <input type="month" name="mes" id="imes" required>
+    </p>
+    <p>
+        <label for="idata">Data</label>
+        <input type="date" name="data" id="idata" required>
+    </p>
+    <p>
+        <label for="itempo">Tempo</label>
+        <input type="time" name="tempo" id="itempo" required>
+    </p>
+    <p>
+        <label for="iemail">Email</label>
+        <input type="email" name="email" id="iemail" required>
+    </p>
+    <p>
+        <label for="itel">Telefone</label>
+        <input type="tel" name="tel" id="itel" required>
+    </p>
+    <p>
+        <input type="checkbox" name="casa" id="icasa">
+        <label for="icasa">Casa</label>
+    </p>
+    <p>
+        <input type="checkbox" name="Sala" id="isala">
+        <label for="isala">Sala</label>
+    </p>
+    <p>
+        <input type="checkbox" name="quarto" id="iquarto">
+        <label for="iquarto">Quarto</label>
+    </p>
+    <p>
+        <input type="checkbox" name="cozinha" id="icozinha">
+        <label for="icozinha">Cozinha</label>
+    </p>
+    <p>
+        <input type="checkbox" name="banho" id="ibanho">
+        <label for="ibanho">Banheiro</label>
+    </p>
+    <p> Sexo:
+        <input type="radio" name="sexo" id="ifem" required checked>
+        <label for="ifem"> Feminino</label>
+        <input type="radio" name="sexo" id="imas" required>
+        <label for="imas">Masculino</label>
+        <input type="radio" name="sexo" id="ineu" required>
+        <label for="ineu">Neutro</label>  
+    </p>
+    <p>
+        <label for="icor">Cor</label>
+        <input type="color" name="cor" id="icor">
+    </p>
+    <p>
+        <label for="isas">Oquanto voce gosta</label>
+        <input type="range" name="sas" id="isas">
+    </p>
+    <p>
+        <label for="ifil">Carregue aqui</label>
+        <input type="file" name="fil" id="ifil">
+    </p>
+    <select name="seletor" id="iseletor">
+        <option value="" selected>--Selecione--</option>
+        <option value="ver">Vermelho</option>
+        <option value="verd">Verde</option>
+        <option value="ama">Amarelo</option>
+        <option value="azu">Azul</option>
+        <option value="Bra">Branco</option>
+    </select>
+<p>
+   <label for="iprof">Profissão</label>
+   <input type="text" name="prof" id="iprof" list="meuid">
+   <datalist id="meuid">
+    <option value="#">Administrador</option>
+    <option value="#">Professor</option>
+    <option value="#">Desenvolvedor</option>
+    <option value="#">Pedreiro</option>
+   </datalist>
+</p>
+<p>
+    <label for="iteste">Mensagem</label> <br>
+    <textarea name="teste" id="iteste" cols="30" rows="10"></textarea>
+</p>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Apagar">
+    </p>
+   </form>
+
+</body>
+</html>
