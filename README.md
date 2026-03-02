@@ -31,7 +31,8 @@ Esse repositório também serve como um registro da minha evolução no HTML e C
 - `d007/` – Finalização de projeto  
 - `d009/` – Trabalhando com tabelas  
 - `d010/` – Ajustes e melhorias  
-- `d011/` – Exercícios com imagens  
+- `d011/` – Exercícios com imagens
+  ...
 
 Além disso, o repositório contém:
 
