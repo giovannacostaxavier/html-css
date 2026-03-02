@@ -1,6 +1,6 @@
 # Exercícios de HTML e CSS
 
-Este repositório reúne meus exercícios de **HTML e CSS**, desenvolvidos ao longo dos meus estudos em desenvolvimento web.
+Este repositório reúne meus exercícios de **HTML e CSS**, desenvolvidos ao longo do curso de HTML e CSS do Curso Em Video.
 
 A ideia aqui é praticar bastante a estruturação de páginas, estilização, organização de conteúdo e evoluir passo a passo na construção de interfaces.
 
