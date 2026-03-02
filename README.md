@@ -12,7 +12,9 @@ Ao longo dos exercícios trabalho conteúdos como:
 - Imagens  
 - Tabelas  
 - Organização de layout  
-- Estilização com CSS  
+- Estilização com CSS
+- Flexbox
+- Grid layout
 
 Esse repositório também serve como um registro da minha evolução no HTML e CSS 🚀
 
