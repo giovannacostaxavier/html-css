@@ -74,4 +74,4 @@ Basta dar dois cliques no arquivo `.html` para abrir no navegador.
 
 ---
 
-✨ Em constante evolução!
+
