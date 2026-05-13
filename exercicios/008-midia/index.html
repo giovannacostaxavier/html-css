@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de mídias!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Vamos fazer aqui nossos testes de audio!</h1>
+    <!-- Não se esqueça de colocar o CONTROLS e o PRELOAD -->
+    <audio controls preload="metadata" controlsList="nodownload">
+      <!-- Coloque os audios em todos os formatos e sempre coloque a frase de UPS! no final para garantir -->
+        <source src="audio/audioteste.mp3" type="audio/mpeg"> 
+       <source src="audio/audioteste (online-audio-converter.com).wav" type="audio/wav">
+       <source src="audio/audioteste (online-audio-converter.com).ogg" type="audio/ogg">
+       <p>Infelizmente seu navegador não consegue reproduzir audio. </p>
+    </audio>
+
+    <h1>Aqui vamos fazer nossos testes de video</h1>
+    <video width="500" controls poster="video/capavideo.png" controlsList="nodownload nofullscreen" disablepictureinpicture>
+        <source src="video/Video-Teste.mp4" type="video/mp4">
+        <source src="video/Video-Teste.webm" type="video/webm">
+        <source src="video/video-teste.ogv" type="video/ogg">
+    </video>
+
+</body>
+</html>

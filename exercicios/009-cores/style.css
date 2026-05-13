@@ -1,0 +1,11 @@
+@charset "UTF-8";
+*{
+    height: 100%;
+}
+body{
+   background-image:linear-gradient(to bottom,#646E78,#8D98A7,#7BE0AD  );
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
