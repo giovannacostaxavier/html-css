@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    <style>
+        input{
+           
+            margin-bottom: 10px;
+            background-color: rgb(172, 202, 219); 
+           
+        }
+      
+        header{
+            border: 3px solid black;
+            background-color: rgb(172, 219, 172); 
+            padding: 10px;
+           
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            height: 380px;
+        
+        }
+        
+        section{
+            border: 3px solid blue;
+            padding: 10px;
+            background-color: rgb(172, 202, 219); 
+            height: 350px;
+            width: 600px;
+          
+        }
+        button{
+            border: 3px solid green;
+            padding: 10px;
+            background-color: rgb(172, 219, 172); 
+            display: block;
+        }
+       
+        .campo{
+            display: flex;
+        }
+        label{
+            width: 80px;
+        }
+        p{
+            display: inline;
+        }
+        form{
+            padding-top: 20px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <p>Calculadora de pontos do concurso</P>
+    </header>
+    <main>
+        <section>
+            <form action="POST" class="container">
+                <div class="container">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="campo">
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="tel" id="tel" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mor">Morada:</label>
+                        <input type="text" name="mor" id="mor" required>
+                    </div>
+                    <p>Aceito receber novidades</p>
+                    <input type="checkbox" name="sim" id="sim">
+                    <label for="sim">Sim</label>
+                    <input type="checkbox" name="nao" id="nao">
+                    <label for="nao">Não</label>
+                   
+                    <button type="submit">Enviar</button>
+                    
+                </div>
+            
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+</body>
+</html>

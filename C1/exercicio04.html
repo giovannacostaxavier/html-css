@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        fieldset {
+            display: inline-block;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        legend {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        label {
+            margin-right: 6px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        button {
+            margin-top: 10px;
+            padding: 4px 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <form action="POST">
+        <fieldset>
+            <legend>Curso</legend>
+
+            <div class="campo">
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso">
+                    <optgroup label="Tecnologia">
+                        <option value="informatica">Informática</option>
+                        <option value="programacao">Programação</option>
+                    </optgroup>
+                    <optgroup label="Artes">
+                        <option value="design">Design</option>
+                        <option value="fotografia">Fotografia</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="obs">Observações:</label>
+                <textarea name="obs" id="obs" cols="25" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

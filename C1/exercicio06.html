@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            background-color: rgb(199, 160, 199);
+        }
+      
+        header{
+            border: 3px solid black;
+            background-color: rgb(243, 193, 193);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            height: 380px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        section{
+            border: 3px solid purple;
+            padding: 10px;
+            background-color: rgb(199, 160, 199);
+            height: 250px;
+            width: 380px;
+          
+        }
+        button{
+            border: 3px solid purple;
+            padding: 10px;
+            background-color: rgb(199, 160, 199);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Calculadora de pontos do concurso</P>
+    </header>
+    <main>
+        <section>
+            <form action="POST" class="container">
+                <label for="a">A:</label>
+                <input type="number" name="a" id="a" required>
+                <label for="b">B:</label>
+                <input type="number" name="b" id="b" required>
+                <label for="op">Tipo de operação</label>
+                <input type="text" name="op" id="op" required>
+                <label for="res">Resultado:</label>
+                <input type="number" name="res" id="res" required>
+                <button type="submit">Enviar</button>
+            
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+</body>
+</html>

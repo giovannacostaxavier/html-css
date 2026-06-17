@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 02</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            background-color: rgb(253, 221, 161);
+        }
+      
+        header{
+            border: 3px solid black;
+            background-color: rgb(185, 215, 218);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            height: 380px;
+        }
+        
+        section{
+            border: 3px solid orange;
+            padding: 10px;
+            background-color: rgb(253, 221, 161);
+            height: 250px;
+        }
+        button{
+            border: 3px solid orange;
+            padding: 10px;
+            background-color: rgb(253, 221, 161);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Acesso ao Portal do Estudante</P>
+    </header>
+    <main>
+        <section>
+            <form action="POST">
+                <label for="ut">Utilizador:</label>
+                <input type="text" name="ut" id="ut" required>
+                <label for="pass">Palavra-passe:</label>
+                <input type="pass" name="pass" id="pass" required>
+                <button type="submit">Enviar</button>
+               
+
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>

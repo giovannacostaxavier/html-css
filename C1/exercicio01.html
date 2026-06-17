@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            background-color: rgb(243, 165, 165);
+        }
+        textarea{
+            display:block;
+            margin-bottom: 10px;
+            background-color: rgb(243, 165, 165);
+        }
+        header{
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            height: 380px;
+        }
+        
+        section{
+            border: 3px solid red;
+            padding: 10px;
+            background-color: rgb(243, 165, 165);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <p>Contacte-nos com a clínica sorriso</P>
+    </header>
+    <main>
+        <section>
+            <form action="POST">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="ass">Assunto:</label>
+                <input type="text" name="ass" id="ass" required>
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                <button type="submit">Enviar</button>
+
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
