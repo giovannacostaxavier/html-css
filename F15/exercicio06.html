@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox — Ex. 7 — Flex-shrink</title>
+    <title>Flexbox 06</title>
     <style>
         body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
         h2 { color: rgb(30, 100, 180); }
@@ -12,25 +12,24 @@
             display: flex; align-items: center; justify-content: center;
         }
         #a { background-color: rgb(18,122,30); }
-        #b { background-color: rgb(239,243,23); }
+        #b { background-color: rgb(239,243,23); border-radius: 30px; }
         #c { background-color: rgb(245,17,17); }
 
         #container {
-            width: 450px; height: 260px;
+            width: 760px; height: 260px;
             display: flex;
-            padding: 20px;
+            align-items: center; gap: 20px; padding: 20px;
             border: 2px dashed #999;
             box-sizing: border-box;
         }
 
-        /* ========= O TEU CÓDIGO CSS ========= */
-        #a { flex-shrink: 0; } /* A nunca encolhe — mantém sempre 200px */
-        /* #b e #c ficam com flex-shrink: 1 (predefinição) — encolhem */
-        /* ==================================== */
+       
+        #b { flex-grow: 1; } 
+        
     </style>
 </head>
 <body>
-    <h2>Exercício 7 — Flex-shrink: 0 na caixa A (nunca encolhe)</h2>
+    <h2>Exercício 6 </h2>
     <div id="container">
         <div id="a" class="textbox">A</div>
         <div id="b" class="textbox">B</div>

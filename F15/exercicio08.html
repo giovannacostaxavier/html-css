@@ -2,13 +2,13 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox — Ex. 4 — Order</title>
+    <title>Flexbox 08</title>
     <style>
         body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
         h2 { color: rgb(30, 100, 180); }
         .textbox {
-            width: 200px; height: 200px; border: 3px solid black;
-            border-radius: 100px; font-size: 50px; color: aliceblue;
+            height: 200px; border: 3px solid black; border-radius: 30px;
+            font-size: 50px; color: aliceblue;
             display: flex; align-items: center; justify-content: center;
         }
         #a { background-color: rgb(18,122,30); }
@@ -16,22 +16,23 @@
         #c { background-color: rgb(245,17,17); }
 
         #container {
-            width: 760px; height: 300px;
+            width: 760px; height: 260px;
             display: flex;
-            justify-content: center; align-items: center; gap: 20px;
+            gap: 20px; padding: 20px;
             border: 2px dashed #999;
+            box-sizing: border-box;
         }
 
-        /* ========= O TEU CÓDIGO CSS ========= */
-        /* Ordem visual desejada: C, A, B */
-        #a { order: 2; }
-        #b { order: 3; }
-        #c { order: 1; }
-        /* ==================================== */
+       
+        .textbox {
+            flex-basis: 150px; 
+            flex-grow: 1;     
+        }
+       
     </style>
 </head>
 <body>
-    <h2>Exercício 4 — Order (ordem visual: C, A, B)</h2>
+    <h2>Exercício 8</h2>
     <div id="container">
         <div id="a" class="textbox">A</div>
         <div id="b" class="textbox">B</div>

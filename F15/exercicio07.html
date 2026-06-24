@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox — Ex. 5 — Align-items + Align-self</title>
+    <title>Flexbox 07</title>
     <style>
         body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
         h2 { color: rgb(30, 100, 180); }
@@ -16,23 +16,20 @@
         #c { background-color: rgb(245,17,17); }
 
         #container {
-            width: 760px; height: 400px;
+            width: 450px; height: 260px;
             display: flex;
-            justify-content: space-between;
+            padding: 20px;
             border: 2px dashed #999;
+            box-sizing: border-box;
         }
 
-        /* ========= O TEU CÓDIGO CSS ========= */
-        #container {
-            align-items: flex-start; /* A fica no topo por omissão */
-        }
-        #b { align-self: center; }   /* B fica centrado */
-        #c { align-self: flex-end; } /* C fica no fundo */
-        /* ==================================== */
+       
+        #a { flex-shrink: 0; } 
+       
     </style>
 </head>
 <body>
-    <h2>Exercício 5 — Align-items: flex-start + Align-self por caixa</h2>
+    <h2>Exercício 7</h2>
     <div id="container">
         <div id="a" class="textbox">A</div>
         <div id="b" class="textbox">B</div>

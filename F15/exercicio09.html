@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <title>Flexbox — Ex. 2 — Coluna invertida</title>
+    <title>Flexbox 09</title>
     <style>
         body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
         h2 { color: rgb(30, 100, 180); }
@@ -15,20 +15,22 @@
         #b { background-color: rgb(239,243,23); }
         #c { background-color: rgb(245,17,17); }
 
-        /* ========= O TEU CÓDIGO CSS ========= */
         #container {
-            width: 300px;
-            height: 700px;
+            width: 760px; height: 300px;
             display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
+            justify-content: center; align-items: center;
             border: 2px dashed #999;
         }
-        /* ==================================== */
+
+        
+        #container {
+            gap: 40px; 
+        }
+        
     </style>
 </head>
 <body>
-    <h2>Exercício 2 — Flex-direction: column-reverse</h2>
+    <h2>Exercício 9</h2>
     <div id="container">
         <div id="a" class="textbox">A</div>
         <div id="b" class="textbox">B</div>
