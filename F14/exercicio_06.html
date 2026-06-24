@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Maratona da Cidade</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(30, 120, 40);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(180, 255, 190); }
+
+        section {
+            border: 2px solid rgb(60, 160, 70);
+            background-color: rgb(210, 245, 215);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(20, 90, 30);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(60, 160, 70);
+            padding-bottom: 6px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+        table th {
+            background-color: rgb(60, 160, 70);
+            color: white;
+            padding: 8px;
+            text-align: left;
+        }
+        table td {
+            padding: 7px 8px;
+            border-bottom: 1px solid rgb(150, 210, 160);
+        }
+        table tr:nth-child(even) { background-color: rgb(180, 235, 185); }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .linha-campo label { width: 160px; font-weight: bold; font-size: 0.9em; }
+        .linha-campo input,
+        .linha-campo select { padding: 4px; width: 220px; }
+
+        button {
+            background-color: rgb(30, 120, 40);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: rgb(30, 120, 40);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maratona da Cidade do Porto 2025</h1>
+        <p>Corra connosco pelas ruas mais bonitas do Porto</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: inscrição na maratona</h2>
+        <p>A Maratona da Cidade do Porto é uma prova de atletismo de rua aberta a todos os corredores com mais de 18 anos. Com um percurso de 42,195 km que atravessa os pontos mais icónicos da cidade, a prova conta já com mais de 8 000 participantes de 40 países. Também disponível nas distâncias de meia-maratona (21 km) e mini-maratona (10 km), para todos os níveis.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: percurso e horários</h2>
+        <p>O percurso inicia na Avenida dos Aliados, passa pela Ribeira, Foz do Douro e termina no Parque da Cidade.</p>
+        <table>
+            <tr>
+                <th>Prova</th>
+                <th>Distância</th>
+                <th>Partida</th>
+                <th>Encerramento</th>
+            </tr>
+            <tr>
+                <td>Maratona</td>
+                <td>42,195 km</td>
+                <td>07h00</td>
+                <td>13h00</td>
+            </tr>
+            <tr>
+                <td>Meia-Maratona</td>
+                <td>21 km</td>
+                <td>08h30</td>
+                <td>12h00</td>
+            </tr>
+            <tr>
+                <td>Mini-Maratona</td>
+                <td>10 km</td>
+                <td>09h30</td>
+                <td>11h30</td>
+            </tr>
+        </table>
+        <p>Pontos de apoio a cada 5 km com água, gel energético e assistência médica.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: formulário de inscrição</h2>
+        <form method="POST">
+            <div class="linha-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha-campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="linha-campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="linha-campo">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria">
+                    <option>Maratona — 42 km</option>
+                    <option>Meia-Maratona — 21 km</option>
+                    <option>Mini-Maratona — 10 km</option>
+                </select>
+            </div>
+            <div class="linha-campo">
+                <label for="nasc">Data de nascimento:</label>
+                <input type="date" id="nasc" name="nasc" required>
+            </div>
+            <button type="submit">Inscrever-me</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Patrocinadores: SportZone · NOS · Continente &mdash; info@maratonadoporto.pt &mdash; Tel: 220 333 444</p>
+    </footer>
+</body>
+</html>

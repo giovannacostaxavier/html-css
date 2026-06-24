@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria de Arte Moderna</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(100, 30, 140);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(220, 180, 255); }
+
+        section {
+            border: 2px solid rgb(150, 60, 190);
+            background-color: rgb(230, 200, 255);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(90, 20, 130);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(150, 60, 190);
+            padding-bottom: 6px;
+        }
+
+        .obra {
+            background-color: rgb(210, 170, 245);
+            border: 1px solid rgb(150, 60, 190);
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .obra h3 { margin: 0 0 4px; color: rgb(70, 10, 110); font-size: 1em; }
+        .obra p { margin: 2px 0; font-size: 0.9em; }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .linha-campo label { width: 140px; font-weight: bold; font-size: 0.9em; }
+        .linha-campo input,
+        .linha-campo select,
+        .linha-campo textarea { padding: 4px; width: 220px; }
+
+        button {
+            background-color: rgb(100, 30, 140);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: rgb(100, 30, 140);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Galeria Moderna &mdash; Arte Contemporânea</h1>
+        <p>Espaço de criação e exposição</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: apresentação do artista</h2>
+        <p><strong>Ana Ferreira</strong> é uma artista plástica portuguesa nascida em 1978, no Porto. Formada em Belas Artes pela Universidade do Porto, a sua obra explora a tensão entre o espaço urbano e a memória colectiva. Reconhecida internacionalmente, expôs em Paris, Berlim e Nova Iorque. O seu estilo mistura pintura acrílica com colagem e elementos digitais, criando obras de grande impacto visual.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: obras em destaque</h2>
+        <div class="obra">
+            <h3>Memória Fragmentada</h3>
+            <p><em>Ano: 2019</em></p>
+            <p>Acrílico e colagem sobre tela. Uma reflexão sobre a identidade urbana e os fragmentos do quotidiano que moldam a nossa memória coletiva.</p>
+        </div>
+        <div class="obra">
+            <h3>Horizonte Partido</h3>
+            <p><em>Ano: 2021</em></p>
+            <p>Técnica mista sobre madeira. Explora a dualidade entre o natural e o construído, entre o efémero e o permanente.</p>
+        </div>
+        <div class="obra">
+            <h3>Silêncio Azul</h3>
+            <p><em>Ano: 2023</em></p>
+            <p>Óleo e pigmento digital. Uma meditação sobre o silêncio das cidades ao amanhecer, captado através de camadas de azul e cinzento.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: formulário de inscrição</h2>
+        <form method="POST">
+            <div class="linha-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha-campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="linha-campo">
+                <label for="bilhete">Tipo de bilhete:</label>
+                <select id="bilhete" name="bilhete">
+                    <option>Normal — 8€</option>
+                    <option>Estudante — 4€</option>
+                    <option>Sénior — 5€</option>
+                    <option>Família — 18€</option>
+                </select>
+            </div>
+            <div class="linha-campo">
+                <label for="data">Data de visita:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="linha-campo">
+                <label for="comentario">Comentário:</label>
+                <textarea id="comentario" name="comentario" rows="3"></textarea>
+            </div>
+            <button type="submit">Comprar bilhete</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Galeria Moderna &mdash; Av. da Liberdade, 200, Lisboa &mdash; Seg–Dom: 10h–20h &mdash; galeria@moderna.pt</p>
+    </footer>
+</body>
+</html>

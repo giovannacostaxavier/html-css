@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Agência de Viagens</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(50, 80, 120);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(180, 210, 255); }
+
+        section {
+            border: 2px solid rgb(80, 130, 190);
+            background-color: rgb(210, 230, 250);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(30, 70, 150);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(80, 130, 190);
+            padding-bottom: 6px;
+        }
+
+        ul { margin: 8px 0; padding-left: 20px; }
+        ul li { margin-bottom: 4px; }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .linha-campo label { width: 140px; font-weight: bold; font-size: 0.9em; }
+        .linha-campo input { padding: 4px; width: 220px; }
+
+        button {
+            background-color: rgb(50, 80, 120);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: rgb(50, 80, 120);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Agência de Viagens HorizonTravel</h1>
+        <p>Descubra o mundo connosco</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: sobre o destino</h2>
+        <p>Lisboa é uma das capitais mais encantadoras da Europa. Com uma história rica de séculos, a cidade combina monumentos históricos, gastronomia única e um povo acolhedor. Das miradouros aos elétricos antigos, passando pelos museus e pelo Fado, Lisboa oferece uma experiência inesquecível para todos os visitantes. O clima ameno durante quase todo o ano torna-a um destino ideal em qualquer estação.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: atrações e atividades</h2>
+        <p>As principais atrações de Lisboa:</p>
+        <ul>
+            <li><strong>Torre de Belém</strong> — monumento icónico à beira do Tejo, símbolo da Era dos Descobrimentos.</li>
+            <li><strong>Mosteiro dos Jerónimos</strong> — obra-prima da arquitectura manuelina, classificada pela UNESCO.</li>
+            <li><strong>Castelo de São Jorge</strong> — fortaleza medieval com vista panorâmica sobre toda a cidade.</li>
+        </ul>
+        <p>Atividades recomendadas: passeio de tuk-tuk pela Alfama, prova de pastéis de Belém e cruzeiro no rio Tejo.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: formulário de inscrição</h2>
+        <form method="POST">
+            <div class="linha-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha-campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="linha-campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="linha-campo">
+                <label for="data">Data da viagem:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <button type="submit">Inscrever</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>HorizonTravel &mdash; Rua das Flores, 42, Lisboa &mdash; Tel: 210 000 000 &mdash; info@horizonTravel.pt</p>
+    </footer>
+</body>
+</html>

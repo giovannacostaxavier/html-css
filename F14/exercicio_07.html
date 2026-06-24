@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Exploração Espacial</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background-color: rgb(15, 10, 40); color: white; }
+
+        header {
+            background-color: rgb(0, 60, 130);
+            border-bottom: 3px solid rgb(0, 200, 230);
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; color: rgb(0, 220, 255); }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(150, 210, 255); }
+
+        section {
+            margin: 16px;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        section h2 {
+            margin-top: 0;
+            font-size: 1.1em;
+            padding-bottom: 6px;
+        }
+
+        .sec-espacial {
+            background-color: rgb(0, 160, 180);
+            border: 2px solid rgb(0, 210, 230);
+        }
+        .sec-espacial h2 { color: white; border-bottom: 2px solid rgb(0, 210, 230); }
+
+        .sec-planetas {
+            background-color: rgb(180, 140, 0);
+            border: 2px solid rgb(240, 200, 0);
+        }
+        .sec-planetas h2 { color: white; border-bottom: 2px solid rgb(240, 200, 0); }
+
+        .sec-form {
+            background-color: rgb(60, 20, 100);
+            border: 2px solid rgb(160, 80, 220);
+        }
+        .sec-form h2 { color: rgb(200, 150, 255); border-bottom: 2px solid rgb(160, 80, 220); }
+
+        ul { margin: 8px 0; padding-left: 20px; }
+        li { margin-bottom: 5px; }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .form-grid input,
+        .form-grid textarea {
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+            background-color: rgb(30, 10, 60);
+            border: 1px solid rgb(160, 80, 220);
+            color: white;
+            border-radius: 4px;
+        }
+        .form-grid input::placeholder,
+        .form-grid textarea::placeholder { color: rgb(180, 150, 210); }
+
+        button {
+            background-color: rgb(160, 80, 220);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+        }
+
+        footer {
+            background-color: rgb(0, 30, 80);
+            color: rgb(150, 200, 255);
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+            border-top: 2px solid rgb(0, 200, 230);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>&#127759; Missão Cosmos 2025</h1>
+        <p>Exploração espacial ao alcance de todos</p>
+    </header>
+
+    <section class="sec-espacial">
+        <h2>SECÇÃO: exploração espacial</h2>
+        <p>A Missão Cosmos 2025 é um programa de exploração espacial internacional que visa mapear os planetas do sistema solar e estudar a possibilidade de vida extraterrestre. Com uma tripulação de 6 astronautas e tecnologia de última geração, a missão parte em setembro de 2025 rumo a Marte, com escala na Lua. Juntos, vamos reescrever a história da humanidade no espaço.</p>
+    </section>
+
+    <section class="sec-planetas">
+        <h2>SECÇÃO: planetas e missão</h2>
+        <p>Objetivos e planetas a visitar:</p>
+        <ul>
+            <li><strong>Lua</strong> — instalação de base temporária e recolha de amostras do solo lunar.</li>
+            <li><strong>Marte</strong> — análise da atmosfera, solo e pesquisa de micro-organismos.</li>
+            <li><strong>Asteroide Bennu</strong> — estudo da composição e desvio de trajetória preventivo.</li>
+        </ul>
+        <p>Duração da missão: 18 meses. Autorização: NASA, ESA e Agência Espacial Portuguesa.</p>
+    </section>
+
+    <section class="sec-form">
+        <h2>SECÇÃO: formulário de missão</h2>
+        <form method="POST">
+            <div class="form-grid">
+                <input type="text" name="nome" placeholder="Nome" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="number" name="idade" placeholder="Idade" min="18" max="65">
+                <input type="text" name="planeta" placeholder="Planeta preferido">
+                <textarea name="mensagem" placeholder="Mensagem" rows="3" style="grid-column: span 2;"></textarea>
+            </div>
+            <button type="submit">&#128640; Candidatar-me à Missão</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&#127759; Missão Cosmos 2025 &mdash; cosmos@missao2025.esa.pt &mdash; Parceiros: NASA · ESA · AEP</p>
+    </footer>
+</body>
+</html>

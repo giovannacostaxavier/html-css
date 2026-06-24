@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Congresso Tecnológico</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(20, 60, 140);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(170, 200, 255); }
+
+        section {
+            border: 2px solid rgb(50, 100, 200);
+            background-color: rgb(210, 225, 255);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(20, 50, 140);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(50, 100, 200);
+            padding-bottom: 6px;
+        }
+
+        .sec-form input,
+        .sec-form select,
+        .sec-form textarea {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(80, 130, 200);
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .checkbox-linha {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .patrocinadores {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .pat {
+            background-color: rgb(180, 205, 255);
+            border: 1px solid rgb(80, 130, 200);
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-weight: bold;
+            font-size: 0.9em;
+            color: rgb(20, 50, 140);
+        }
+
+        button {
+            background-color: rgb(20, 60, 140);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        footer {
+            background-color: rgb(20, 60, 140);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TechSummit Portugal 2025</h1>
+        <p>Congresso tecnológico</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: introdução ao evento</h2>
+        <p>O TechSummit Portugal é o maior congresso tecnológico nacional, reunindo mais de 5 000 profissionais de tecnologia, inovação, inteligência artificial e empreendedorismo. Com palestras de oradores internacionais, workshops práticos e uma área de exposição, o evento acontece nos dias 15 e 16 de novembro de 2025, no Centro de Congressos de Lisboa. Garanta já o seu lugar!</p>
+    </section>
+
+    <section class="sec-form">
+        <h2>SECÇÃO: formulário de inscrição</h2>
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefone" placeholder="Telefone">
+            <select name="ingresso">
+                <option value="">— Tipo de ingresso —</option>
+                <option>Passe Geral — 2 dias — 150€</option>
+                <option>Passe Estudante — 2 dias — 60€</option>
+                <option>Só dia 15 — 90€</option>
+                <option>Só dia 16 — 90€</option>
+            </select>
+            <input type="date" name="data" placeholder="Data preferida">
+            <div class="checkbox-linha">
+                <input type="checkbox" id="aceito" name="aceito" required style="display:inline; width:auto; margin:0;">
+                <label for="aceito">Li e aceito os termos e condições de participação.</label>
+            </div>
+            <button type="submit">Inscrever-me no Congresso</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: patrocinadores</h2>
+        <p>Agradecemos o apoio dos nossos patrocinadores:</p>
+        <div class="patrocinadores">
+            <div class="pat">Microsoft</div>
+            <div class="pat">Google Portugal</div>
+            <div class="pat">NOS</div>
+            <div class="pat">Altice</div>
+            <div class="pat">Critical Software</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>TechSummit Portugal &mdash; Centro de Congressos, Lisboa &mdash; info@techsummit.pt &mdash; Tel: 210 888 999</p>
+    </footer>
+</body>
+</html>

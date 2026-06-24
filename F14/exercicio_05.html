@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Spa & Saúde</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(20, 120, 110);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(180, 240, 230); }
+
+        section {
+            border: 2px solid rgb(40, 160, 145);
+            background-color: rgb(200, 240, 235);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(10, 90, 80);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(40, 160, 145);
+            padding-bottom: 6px;
+        }
+
+        .tratamento {
+            background-color: rgb(160, 220, 210);
+            border: 1px solid rgb(40, 160, 145);
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .tratamento h3 { margin: 0 0 4px; color: rgb(10, 80, 70); font-size: 1em; }
+        .tratamento p { margin: 2px 0; font-size: 0.9em; }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .linha-campo label { width: 140px; font-weight: bold; font-size: 0.9em; }
+        .linha-campo input,
+        .linha-campo select { padding: 4px; width: 220px; }
+
+        button {
+            background-color: rgb(20, 120, 110);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: rgb(20, 120, 110);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Serenity Spa &amp; Saúde</h1>
+        <p>O seu oásis de bem-estar</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: terapia e benefícios</h2>
+        <p>No Serenity Spa acreditamos que o bem-estar é uma necessidade, não um luxo. Os nossos tratamentos combinam técnicas milenares com tecnologia moderna para proporcionar relaxamento profundo, alívio do stress e revitalização do corpo e da mente. Deixe-se guiar pelos nossos especialistas numa jornada de equilíbrio e harmonia.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: tratamentos</h2>
+        <div class="tratamento">
+            <h3>Massagem de Relaxamento — 60 min | 55€</h3>
+            <p>Técnica sueca de effleurage que alivia tensões musculares, melhora a circulação e promove um estado de relaxamento profundo.</p>
+        </div>
+        <div class="tratamento">
+            <h3>Ritual de Pedras Quentes — 90 min | 80€</h3>
+            <p>Massagem com pedras vulcânicas aquecidas que libertam o calor profundo nos músculos, eliminando dores crónicas e restabelecendo o equilíbrio energético.</p>
+        </div>
+        <div class="tratamento">
+            <h3>Tratamento Facial Hidratante — 45 min | 45€</h3>
+            <p>Limpeza profunda, esfoliação e hidratação intensiva com produtos naturais. Indicado para peles secas, cansadas ou com sinais de envelhecimento.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: formulário de marcação</h2>
+        <form method="POST">
+            <div class="linha-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha-campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="linha-campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="linha-campo">
+                <label for="tratamento">Tratamento:</label>
+                <select id="tratamento" name="tratamento">
+                    <option>Massagem de Relaxamento</option>
+                    <option>Ritual de Pedras Quentes</option>
+                    <option>Tratamento Facial Hidratante</option>
+                </select>
+            </div>
+            <div class="linha-campo">
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+            </div>
+            <div class="linha-campo">
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+            </div>
+            <button type="submit">Marcar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Serenity Spa &mdash; Rua do Bem-Estar, 5, Porto &mdash; Seg–Sáb: 9h–20h &mdash; spa@serenity.pt</p>
+    </footer>
+</body>
+</html>

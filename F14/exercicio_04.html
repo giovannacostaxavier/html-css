@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Campanha Solidária</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(180, 20, 30);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(255, 190, 190); }
+
+        section {
+            border: 2px solid rgb(200, 60, 70);
+            background-color: rgb(255, 210, 210);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(150, 10, 20);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(200, 60, 70);
+            padding-bottom: 6px;
+        }
+
+        ul { margin: 8px 0; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+
+        .impacto {
+            background-color: rgb(240, 170, 170);
+            border-left: 4px solid rgb(180, 20, 30);
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .linha-campo label { width: 150px; font-weight: bold; font-size: 0.9em; }
+        .linha-campo input,
+        .linha-campo select { padding: 4px; width: 220px; }
+
+        button {
+            background-color: rgb(180, 20, 30);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+
+        footer {
+            background-color: rgb(180, 20, 30);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Campanha Juntos Somos Mais</h1>
+        <p>Campanha solidária nacional</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: missão da campanha</h2>
+        <p>Acreditamos que cada pessoa tem o poder de mudar o mundo à sua volta. A nossa missão é unir comunidades, apoiar os mais vulneráveis e criar um impacto real e duradouro na sociedade. Com a tua participação, podemos chegar mais longe e construir um futuro mais justo e solidário para todos.</p>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: causas e impacto</h2>
+        <p>As três causas que apoiamos:</p>
+        <ul>
+            <li><strong>Combate à pobreza alimentar</strong> — distribuição de cabazes a famílias carenciadas em todo o país.</li>
+            <li><strong>Educação para todos</strong> — apoio escolar e material didático para crianças em risco de abandono.</li>
+            <li><strong>Saúde comunitária</strong> — rastreios gratuitos e apoio médico em zonas rurais com acesso limitado.</li>
+        </ul>
+        <div class="impacto">
+            <strong>Impacto em 2024:</strong> 12 000 famílias apoiadas, 3 500 crianças acompanhadas e 800 rastreios realizados em 14 concelhos.
+        </div>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: formulário de participação</h2>
+        <form method="POST">
+            <div class="linha-campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha-campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="linha-campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone">
+            </div>
+            <div class="linha-campo">
+                <label for="apoio">Opção de apoio:</label>
+                <select id="apoio" name="apoio">
+                    <option>Voluntariado presencial</option>
+                    <option>Donativo mensal</option>
+                    <option>Divulgação da campanha</option>
+                    <option>Doação de bens</option>
+                </select>
+            </div>
+            <button type="submit">Participar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Obrigado pelo teu apoio! &mdash; info@juntossomosmaIs.pt &mdash; Tel: 800 200 300 (linha gratuita)</p>
+    </footer>
+</body>
+</html>

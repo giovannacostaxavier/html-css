@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurante Moderno</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(170, 70, 0);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(255, 210, 170); }
+
+        section {
+            border: 2px solid rgb(220, 110, 0);
+            background-color: rgb(255, 235, 210);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+        }
+        section h2 {
+            color: rgb(140, 50, 0);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(220, 110, 0);
+            padding-bottom: 6px;
+        }
+
+        .menu-categoria { margin-bottom: 14px; }
+        .menu-categoria h3 { color: rgb(170, 70, 0); margin: 0 0 6px; font-size: 0.95em; text-transform: uppercase; letter-spacing: 1px; }
+        .menu-categoria ul { margin: 0; padding-left: 18px; }
+        .menu-categoria li { margin-bottom: 3px; font-size: 0.9em; }
+        .menu-categoria li span { color: rgb(150, 80, 0); font-weight: bold; float: right; }
+
+        .sec-form input,
+        .sec-form select,
+        .sec-form textarea {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(200, 130, 0);
+            border-radius: 4px;
+            background-color: white;
+        }
+
+        .form-duo {
+            display: flex;
+            gap: 10px;
+        }
+        .form-duo input { flex: 1; }
+
+        button {
+            background-color: rgb(170, 70, 0);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        .sugestoes {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .sug-card {
+            background-color: rgb(245, 215, 180);
+            border: 1px solid rgb(210, 140, 60);
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 0.9em;
+            flex: 1;
+            min-width: 150px;
+        }
+        .sug-card strong { color: rgb(140, 50, 0); display: block; margin-bottom: 4px; }
+
+        footer {
+            background-color: rgb(170, 70, 0);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Restaurante Laranjeira</h1>
+        <p>Cozinha moderna com alma portuguesa</p>
+    </header>
+
+    <section>
+        <h2>SECÇÃO: menu do restaurante</h2>
+        <div class="menu-categoria">
+            <h3>Entradas</h3>
+            <ul>
+                <li>Alheira com ovo estrelado e migas <span>8€</span></li>
+                <li>Polvo grelhado com batata-doce <span>12€</span></li>
+                <li>Queijos e enchidos da serra <span>10€</span></li>
+            </ul>
+        </div>
+        <div class="menu-categoria">
+            <h3>Prato Principal</h3>
+            <ul>
+                <li>Bacalhau confitado com grão e espinafres <span>22€</span></li>
+                <li>Secretos de porco preto com esmagada <span>20€</span></li>
+                <li>Risoto de cogumelos silvestres <span>18€</span></li>
+            </ul>
+        </div>
+        <div class="menu-categoria">
+            <h3>Sobremesa</h3>
+            <ul>
+                <li>Pudim Abade de Priscos <span>6€</span></li>
+                <li>Mousse de chocolate negro <span>5€</span></li>
+                <li>Tarte de amêndoa com gelado <span>7€</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="sec-form">
+        <h2>SECÇÃO: formulário de reserva</h2>
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome do responsável" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefone" placeholder="Telefone">
+            <input type="number" name="pessoas" placeholder="Número de pessoas" min="1" max="20">
+            <div class="form-duo">
+                <input type="date" name="data" required>
+                <input type="time" name="hora" required>
+            </div>
+            <textarea name="obs" placeholder="Observações (alergias, ocasião especial…)" rows="3"></textarea>
+            <button type="submit">Reservar mesa</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>SECÇÃO: sugestões do chef</h2>
+        <div class="sugestoes">
+            <div class="sug-card">
+                <strong>Prato do dia</strong>
+                Bacalhau à Lagareiro com brócolos e batata assada.
+            </div>
+            <div class="sug-card">
+                <strong>Vinho recomendado</strong>
+                Quinta do Crasto Reserva — Douro 2022.
+            </div>
+            <div class="sug-card">
+                <strong>Especial fim de semana</strong>
+                Menu degustação 5 pratos com harmonização — 65€ por pessoa.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Restaurante Laranjeira &mdash; Rua do Almada, 78, Porto &mdash; Ter–Dom: 12h–15h e 19h–23h &mdash; reservas@laranjeira.pt</p>
+    </footer>
+</body>
+</html>

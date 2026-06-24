@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Loja de Acessórios</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+
+        header {
+            background-color: rgb(190, 10, 90);
+            color: white;
+            padding: 20px;
+        }
+        header h1 { margin: 0; font-size: 1.6em; }
+        header p { margin: 4px 0 0; font-size: 0.9em; color: rgb(255, 180, 220); }
+
+        .sec-categorias {
+            background-color: rgb(80, 60, 180);
+            border: 2px solid rgb(120, 100, 220);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+            color: white;
+        }
+        .sec-categorias h2 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(160, 140, 255);
+            padding-bottom: 6px;
+        }
+
+        .sec-produtos {
+            background-color: rgb(40, 150, 50);
+            border: 2px solid rgb(80, 190, 90);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+            color: white;
+        }
+        .sec-produtos h2 {
+            color: white;
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(100, 210, 110);
+            padding-bottom: 6px;
+        }
+
+        .produto {
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .produto h3 { margin: 0 0 4px; font-size: 1em; }
+        .produto .preco { font-weight: bold; color: rgb(200, 255, 160); }
+        .produto p { margin: 4px 0 0; font-size: 0.9em; }
+
+        .categorias-lista {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 8px;
+        }
+        .cat-tag {
+            background-color: rgba(255,255,255,0.2);
+            padding: 5px 14px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .sec-form {
+            border: 2px solid rgb(220, 140, 0);
+            margin: 16px;
+            padding: 16px;
+            border-radius: 6px;
+            background-color: white;
+        }
+        .sec-form h2 {
+            color: rgb(200, 100, 0);
+            margin-top: 0;
+            font-size: 1.1em;
+            border-bottom: 2px solid rgb(220, 140, 0);
+            padding-bottom: 6px;
+        }
+
+        .sec-form input,
+        .sec-form select {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(200, 180, 0);
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: rgb(220, 140, 0);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 4px;
+            width: 100%;
+            margin-top: 4px;
+        }
+
+        footer {
+            background-color: rgb(190, 10, 90);
+            color: white;
+            padding: 14px 20px;
+            margin-top: 16px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>StyleBox — Acessórios com Estilo</h1>
+        <p>As melhores coleções de acessórios femininos e masculinos</p>
+    </header>
+
+    <section class="sec-categorias">
+        <h2>SECÇÃO: coleção e categorias</h2>
+        <p>Explore as nossas categorias e encontre o acessório perfeito:</p>
+        <div class="categorias-lista">
+            <span class="cat-tag">&#128081; Chapéus</span>
+            <span class="cat-tag">&#128144; Carteiras</span>
+            <span class="cat-tag">&#128374; Cintos</span>
+            <span class="cat-tag">&#128142; Jóias</span>
+            <span class="cat-tag">&#9728;&#65039; Óculos</span>
+        </div>
+        <p style="margin-top:12px;">Destaques: Nova coleção Verão 2025 já disponível!</p>
+    </section>
+
+    <section class="sec-produtos">
+        <h2>SECÇÃO: produtos em destaque</h2>
+        <div class="produto">
+            <h3>Carteira de Pele Italiana</h3>
+            <p class="preco">89€</p>
+            <p>Carteira artesanal em pele genuína, com compartimentos para cartões, notas e moedas. Disponível em preto, castanho e bordeaux.</p>
+        </div>
+        <div class="produto">
+            <h3>Colar Dourado Minimalista</h3>
+            <p class="preco">34€</p>
+            <p>Colar em aço inoxidável banhado a ouro 18k. Design elegante e atemporal, ideal para qualquer ocasião.</p>
+        </div>
+        <div class="produto">
+            <h3>Chapéu de Aba Larga Bege</h3>
+            <p class="preco">45€</p>
+            <p>Chapéu de palha natural com fita de cetim. Perfeito para os dias de verão na praia ou na cidade.</p>
+        </div>
+    </section>
+
+    <section class="sec-form">
+        <h2>SECÇÃO: formulário de compra</h2>
+        <form method="POST">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="morada" placeholder="Morada de entrega" required>
+            <select name="produto">
+                <option value="">— Escolha o produto —</option>
+                <option>Carteira de Pele Italiana — 89€</option>
+                <option>Colar Dourado Minimalista — 34€</option>
+                <option>Chapéu de Aba Larga Bege — 45€</option>
+            </select>
+            <input type="number" name="quantidade" placeholder="Quantidade" min="1" value="1">
+            <button type="submit">Comprar agora</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>StyleBox &mdash; Rua da Moda, 10, Lisboa &mdash; loja@stylebox.pt &mdash; Tel: 210 555 777</p>
+    </footer>
+</body>
+</html>
