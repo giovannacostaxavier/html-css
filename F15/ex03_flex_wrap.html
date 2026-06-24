@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox — Ex. 3 — Flex-wrap</title>
+    <style>
+        body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
+        h2 { color: rgb(30, 100, 180); }
+        .textbox {
+            width: 200px; height: 200px; border: 3px solid black;
+            border-radius: 100px; font-size: 50px; color: aliceblue;
+            display: flex; align-items: center; justify-content: center;
+        }
+        #a { background-color: rgb(18,122,30); }
+        #b { background-color: rgb(239,243,23); }
+        #c { background-color: rgb(245,17,17); }
+
+        /* ========= O TEU CÓDIGO CSS ========= */
+        #container {
+            width: 450px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            border: 2px dashed #999;
+        }
+        /* ==================================== */
+    </style>
+</head>
+<body>
+    <h2>Exercício 3 — Flex-wrap: wrap</h2>
+    <div id="container">
+        <div id="a" class="textbox">A</div>
+        <div id="b" class="textbox">B</div>
+        <div id="c" class="textbox">C</div>
+    </div>
+</body>
+</html>

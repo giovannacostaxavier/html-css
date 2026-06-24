@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox — Ex. 10 — Projeto Final (5 caixas)</title>
+    <style>
+        body { background: #f5f5f5; padding: 20px; font-family: Arial, sans-serif; }
+        h2 { color: rgb(30, 100, 180); }
+        .textbox {
+            width: 140px; height: 140px; border: 3px solid black;
+            border-radius: 70px; font-size: 40px; color: aliceblue;
+            display: flex; align-items: center; justify-content: center;
+        }
+        #a { background-color: rgb(18,122,30); }
+        #b { background-color: rgb(239,243,23); }
+        #c { background-color: rgb(245,17,17); }
+        #d { background-color: blueviolet; }
+        #e { background-color: darkorange; }
+
+        /* ========= O TEU CÓDIGO CSS ========= */
+        #container {
+            width: 480px; height: 420px; padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-content: space-around;
+            gap: 20px;
+            border: 2px dashed #999;
+        }
+        /* ==================================== */
+    </style>
+</head>
+<body>
+    <h2>Exercício 10 — Projeto final: 5 caixas em grelha flexível</h2>
+    <div id="container">
+        <div id="a" class="textbox">A</div>
+        <div id="b" class="textbox">B</div>
+        <div id="c" class="textbox">C</div>
+        <div id="d" class="textbox">D</div>
+        <div id="e" class="textbox">E</div>
+    </div>
+</body>
+</html>
