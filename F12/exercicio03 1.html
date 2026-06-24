@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        textarea{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        header{
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 550px;
+
+        }
+        
+        section{
+            border: 2px solid black;
+            padding: 10px;
+           
+        }
+       
+        h2{
+            color: rgb(1, 121, 101);
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <p>Contacte-nos com a clínica sorriso</P>
+    </header>
+    <main>
+        <section>
+            
+                    <h2>Mercado Fresco</h2>
+                    <p>Lista de produtos frescos</p>
+                    <ul>
+                        <li>Maçãs</li>
+                        <li>Bananas</li>
+                        <li>Tomates</li>
+                        <li>Pão</li>
+                        <li>Leite</li>
+                    </ul>
+                    <form action="POST">
+                        <label for="nome">Produto:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="qtd">Quantidade:</label>
+                        <input type="number" name="qtd" id="qtd" required>
+                        <label for="mensagem">Morada</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+               
+        </section>
+      
+    </main>
+</body>
+</html>

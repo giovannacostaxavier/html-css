@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 08</title>
+    <style>
+        header {
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+
+        main {
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 550px;
+        }
+
+        section {
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        h2 {
+            color: rgb(180, 120, 0);
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            width: 500px;
+        }
+
+        thead tr {
+            background-color: rgb(180, 210, 180);
+        }
+
+        thead th {
+            padding: 8px 16px;
+            text-align: left;
+            font-weight: normal;
+        }
+
+        tbody tr {
+            background-color: rgb(255, 255, 200);
+            border: 1px solid rgb(200, 160, 0);
+        }
+
+        tbody td {
+            padding: 8px 16px;
+            border: 1px solid rgb(200, 160, 0);
+        }
+
+        .linha-campo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .linha-campo label {
+            width: 90px;
+        }
+
+        .linha-campo input {
+            padding: 2px;
+        }
+
+        button {
+            background-color: white;
+            color: rgb(60, 120, 60);
+            border: 2px solid rgb(100, 160, 100);
+            padding: 4px 14px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Exercício 8 — Oficina Turbo</p>
+    </header>
+    <main>
+        <section>
+            <h2>Oficina Turbo</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Preço</th>
+                        <th>Tempo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Óleo</td>
+                        <td>35€</td>
+                        <td>30m</td>
+                    </tr>
+                    <tr>
+                        <td>Travões</td>
+                        <td>90€</td>
+                        <td>2h</td>
+                    </tr>
+                    <tr>
+                        <td>Pneus</td>
+                        <td>180€</td>
+                        <td>1h</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <form method="POST">
+                <div class="linha-campo">
+                    <label for="carro">Carro:</label>
+                    <input type="text" name="carro" id="carro">
+                </div>
+                <div class="linha-campo">
+                    <label for="contacto">Contacto:</label>
+                    <input type="text" name="contacto" id="contacto">
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

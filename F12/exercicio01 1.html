@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        textarea{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        header{
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 550px;
+
+        }
+        
+        section{
+            border: 2px solid black;
+            padding: 10px;
+           
+        }
+        section > div{
+            display: flex;
+        }
+        h2{
+            color: rgb(3, 3, 161);
+        }
+        img{
+            height: auto;
+            width: 200px;
+            
+            
+        }
+        #container{
+            display: flex;
+            align-items: flex-start;
+            gap: 100px;
+        }
+        @media (max-width: 600px){
+        #container{
+            flex-direction: column;
+        }
+        img{
+            margin-left: 35px;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <p>Contacte-nos com a clínica sorriso</P>
+    </header>
+    <main>
+        <section>
+            <div id="container">
+                
+                <div id="conteudo">
+                    <h2>Clinica veterinária viva</h2>
+                    <p>Agenda a sua consulta com total conforto</p>
+                    <p>Serviços em destaque:</p>
+                    <ul>
+                        <li>Limpeza profunda</li>
+                        <li>Branqueamento</li>
+                        <li>Ortodontia</li>
+                    </ul>
+                    <form action="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+                </div>
+                <div>
+                    <img src="pexels-semih-demirbas-475034547-16143351.jpg" alt="clinica">
+                   </div>
+            </div>
+        </section>
+      
+    </main>
+</body>
+</html>

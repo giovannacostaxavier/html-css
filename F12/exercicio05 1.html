@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 05</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        textarea{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        header{
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 550px;
+
+        }
+        
+        section{
+            border: 2px solid black;
+            padding: 10px;
+           
+        }
+        section > div{
+            display: flex;
+        }
+        h2{
+            color: rgb(161, 3, 3);
+        }
+        img{
+            height: auto;
+            width: 300px;
+            
+            
+        }
+        #container{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            gap: 100px;
+        }
+        @media (max-width: 600px){
+        #container{
+            flex-direction: column;
+        }
+        img{
+            margin-left: 20px;
+            height: auto;
+            width: 220px;
+        }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <p>Galeria de arte moderna</P>
+    </header>
+    <main>
+        <section>
+            <div id="container">
+                
+                <div id="conteudo">
+                    <h2>Galeria de arte moderna</h2>
+                    <p>Destaques da visita:</p>
+                    <ul>
+                        <li>Pintura contemporânea</li>
+                        <li>Estrutura interativa</li>
+                        <li>Sala Experimental</li>
+                    </ul>
+                    <form action="POST">
+                        <p>Escolha o horário:</p>
+                        <label for="mesmo">Manhã</label>
+                        <input type="radio" name="mesmo" id="mesmo">
+                        <label for="mesmo">Tarde</label>
+                        <input type="radio" name="mesmo" id="tarde">
+                        <label for="mesmo">Noite</label>
+                        <input type="radio" name="mesmo" id="tarde">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+                </div>
+                <div>
+                    <img src="pexels-construccion-total-2464540-10951145.jpg" alt="clinica">
+                   </div>
+            </div>
+        </section>
+      
+    </main>
+</body>
+</html>

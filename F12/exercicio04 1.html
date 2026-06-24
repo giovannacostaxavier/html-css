@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+    <style>
+        input{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        textarea{
+            display:block;
+            margin-bottom: 10px;
+            
+        }
+        header{
+            border: 3px solid green;
+            background-color: rgb(147, 234, 147);
+            padding-left: 10px;
+        }
+        main{
+            border: 1px solid black;
+            padding: 10px;
+            min-height: 550px;
+
+        }
+        
+        section{
+            border: 2px solid black;
+            padding: 10px;
+           
+        }
+       
+        h2{
+            color: rgb(1, 121, 101);
+        }
+        button{
+            background-color: rgb(251, 251, 132);
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <p>Portal Escolar</P>
+    </header>
+    <main>
+        <section>
+            
+                    <h2>Portal Escolar</h2>
+                    <p>Passos para participar do clube</p>
+                    <ol>
+                        <li>Preencher o Formulário</li>
+                        <li>Aguardar confirmação</li>
+                        <li>Levar o material</li>
+                    </ol>
+                    <form action="POST">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required>
+                        <label for="tel">Telefone:</label>
+                        <input type="tel" name="tel" id="tel" required>
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="5" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                    
+               
+        </section>
+      
+    </main>
+</body>
+</html>
